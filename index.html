@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <title>Emre Karadağ Kişisel Web Sitesi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jqery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#usrname").val().append(" <b>Eklediğiniz Yorum : </b>.");
+            });
+            $("#btn2").click(function () {
+                $("ol").append("<li>Appended item</li>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimda">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#calisma">Yaptığım  İşler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#yorumlar">Yorumlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="hakkimda" class="container-fluid hakkimda">
+            <div class="hakkimdaicerik">
+                <h2 class="baslik">Yunus Emre Karadağ</h2>
+                <p>Çalıştığım süre boyunca, C#, SQL Server, Html, CSS, JavaScript ve ASP.Net alanlarında OOP katmanlı mimari yapısını benimseyerek kendimi geliştirdim. Bu süre zarfında eğitim ve iş hayatı tecrübelerimin etkisiyle ekip çalışması, motivasyon ve araştırma gibi konularda becerilerimi geliştirmeye çalıştım. Ayrıca %100 Burslu İşkur destekli Nitelikli Bilişim Uzmanlığı Eğitimi kapsamında eğitimimi tamamlayarak, öğrenmeye açık, dikkatli, sorumluluk sahibi ve özverili kişiliğim ile pozisyonların gereklerini yerine getirebileceğime inanıyorum. </p>
+            </div>
+            <div class="sembolicerik">
+                <img src="img/sembol.png">
+            </div>
+        </div>
+        <div id="calisma" class="row resim-galerisi">
+            <div class="col-md-12"><h1 class="baslik text-center">Fotoğraf Galerisi</h1></div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/kızkulesi.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <p>Kız Kulesi</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/topkapi.jpg" alt="Nature" style="width:100%">
+                    <div class="caption">
+                        <p>Topkapı Sarayı</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/galatakulesi.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                        <p>Galata Kulesi</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/eminonü.jpg" alt="Fjords" style="width:100%">
+                    <div class="caption">
+                        <p>Eminönü</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h1 class="baslik text-center">Yorumlar  </h1>
+        <div id="yorumlar" class="bg-navbar container">
+            <div class="row">
+                <div style="margin-top: 30px;  " class="col">
+                    <h3 style="color:rgb(255, 255, 255);">
+                        Yorum Yap - Değerlendir
+                    </h3>
+                    <textarea class="form-control" type="text" id="input" rows="3">Yorumu Alnına Yorum Yapabilirsiniz. </textarea>
+                    <br>
+                    <br>
+                    <button type="button" id="setText" class="btn btn-secondary">Yorum Yap </button>
+                    <button type="button" id="silmeislemi" class="btn btn-secondary">Yorum Sil   </button>
+                    </button>
+                </div>
+                <div style="margin-top: 30px;" class="col">
+                    <ol>
+                        <h3 style="color:rgb(255, 255, 255);">   Yapılan Yorumlar</h3>
+                        <li id="removethis" class="list-group-item">Benim Yorumum Burada </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="iletisim" class="row iletisim">
+            <div class="col-md-12 ">
+                <h3 class="text-center">İletişim Formu </h3>
+                <div class="col-md-6 bg-light mx-auto">
+                    <ul class="list-group">
+                        <li class="list-group-item">Adres:</span>  Üsküdar/İSTANBUL </li>
+                        <li class="list-group-item">Telefon:</span>  +90 531 388 43 94 </li>
+                        <li class="list-group-item">E-Mail:</span>  ynsmrkaradag@gmail.com </li>
+                        <li class="list-group-item">Web-Site:</span>  www.yunusemrekaradag.com </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            $("#setText").click(function (event) {
+                var deger = $('#input').val();
+                $('ol').append("<li id='removethis' class='list-group-item'> " + deger + "           </li>");
+            });
+        </script>
+        <script>
+            $("#silmeislemi").click(function () {
+                $("#removethis").remove();
+            });
+        </script>
